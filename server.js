@@ -9,10 +9,6 @@ var PORT = process.env.PORT || 3001;
 // Requiring our models for syncing
 var db = require("./models");
 
-//get around cors?
-const cors = require('cors');
-app.use(cors());
-
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
