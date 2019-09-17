@@ -18,7 +18,7 @@ class CreateUserPage extends React.Component {
         //allows us to stop the form submission from refreshing the page
         event.preventDefault();
         const data = this.state;
-        axios.post('http://localhost:8080/api/users', data)
+        axios.post('/api/users', data)
           .then(function (response) {
             console.log(response.data);
           })
